@@ -55,6 +55,8 @@ were added by the user via console input. The script also updates the project's 
 
 Users are encouraged to create a PR if they have foreign language subreddits not included in the current list.
 
+##### Do not edit README.md directly. Changes to this file should be done in the script.
+
 ### List of Non-English Subreddits'''
 
 with open('README.md', 'w', newline='') as f:
