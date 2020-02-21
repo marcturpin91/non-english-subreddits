@@ -238,6 +238,7 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/peru
 /r/photosmontreal
 /r/pietsmiet
+/r/pikabu
 /r/piratenpartei
 /r/pitesti
 /r/playa

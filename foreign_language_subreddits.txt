@@ -225,6 +225,7 @@
 /r/peru
 /r/photosmontreal
 /r/pietsmiet
+/r/pikabu
 /r/piratenpartei
 /r/pitesti
 /r/playa
