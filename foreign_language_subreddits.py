@@ -1,8 +1,9 @@
 #!/usr/bin/python
 
 import csv
+import re
 
-# will contain existing subreddits (removing '/r/') in file, and allow adding new subreddits via console
+# will contain existing subreddits in file, and allow adding new subreddits via console
 subreddit_set = set()
 
 with open('foreign_language_subreddits.txt', 'r', newline='') as f:
@@ -11,13 +12,18 @@ with open('foreign_language_subreddits.txt', 'r', newline='') as f:
         for subreddit in row:
             subreddit_set.add(subreddit.lower())
 
-# console input loop for adding additional new subreddits
+# valid subreddit name pattern requirements
+subreddit_pattern = re.compile("\A\/r\/[A-Za-z0-9][A-Za-z0-9_]{1,20}\Z")
 new_subreddits = []
+
+# console input loop for adding additional new subreddits
+instruction_string = 'Enter subreddit name (ex: /r/brasil), q to Quit, r to remove last entry'
+print(instruction_string)
 while True:
-    print('Enter subreddit name without "/r/" prefix, q to Quit, r to remove last entry')
     input_text = str(input()).lower().strip()
     # quit
     if input_text == 'q':
+        print('Added the following subreddits: ', new_subreddits)
         break
     # remove last subreddit inputted
     elif input_text == 'r':
@@ -29,13 +35,15 @@ while True:
             print('no new subreddits left to remove')
     # subreddit inputted
     else:
-        subreddit = '/r/' + input_text
-        if subreddit not in subreddit_set:
-            subreddit_set.add(subreddit)
-            new_subreddits.append(subreddit)
-            print(subreddit, 'added to set')
+        if not re.match(subreddit_pattern, input_text):
+            print('invalid input -', instruction_string)
+            pass
+        elif input_text not in subreddit_set:
+            subreddit_set.add(input_text)
+            new_subreddits.append(input_text)
+            print(input_text, 'added to set')
         else:
-            print(subreddit, 'already present in set')
+            print(input_text, 'already present in set')
 
 # sorted subreddit list
 subreddit_list = sorted(subreddit_set)
