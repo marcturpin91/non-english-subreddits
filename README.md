@@ -91,6 +91,7 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/demandezreddit
 /r/denmark
 /r/dentacoin
+/r/deohneregeln
 /r/desporto
 /r/deutschland
 /r/distritofederal
@@ -103,7 +104,9 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/ecouteca
 /r/ecuador
 /r/edomex
+/r/einfach_posten
 /r/elsalvador
+/r/eltern
 /r/ensenada
 /r/entraideinformatique
 /r/erba
@@ -173,7 +176,9 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/knugencoin
 /r/koeln
 /r/kolding
+/r/kopiernudeln
 /r/krakow
+/r/kreiswichs
 /r/kripto
 /r/lalaguna
 /r/latinoamerica
@@ -331,6 +336,7 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/vosfinances
 /r/vzla
 /r/warsaw
+/r/weibsvolk
 /r/wien
 /r/yucatan
 /r/zacatecas
