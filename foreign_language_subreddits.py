@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import csv
 
 # will contain existing subreddits (removing '/r/') in file, and allow adding new subreddits via console
@@ -36,7 +38,7 @@ while True:
             print(subreddit, 'already present in set')
 
 # sorted subreddit list
-subreddit_list = sorted([subreddit for subreddit in subreddit_set])
+subreddit_list = sorted(subreddit_set)
 
 # write results back to text file
 with open('foreign_language_subreddits.txt', 'w', newline='') as f:

@@ -182,6 +182,7 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/kripto
 /r/lalaguna
 /r/latinoamerica
+/r/latvia
 /r/lecafe
 /r/ligue1
 /r/lille
@@ -244,6 +245,7 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/photosmontreal
 /r/pietsmiet
 /r/pikabu
+/r/pikabushort
 /r/piratenpartei
 /r/pitesti
 /r/playa
@@ -281,6 +283,7 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/romania_ss
 /r/rosarito
 /r/ru
+/r/russiafunny
 /r/russianimmersion
 /r/santiago
 /r/saopaulo
@@ -321,6 +324,7 @@ Users  are  encouraged  to  create  a  PR  if  they  have  foreign  language  su
 /r/tvadicto
 /r/udem
 /r/udes
+/r/ukraina
 /r/ulaval
 /r/umea
 /r/uppsala
