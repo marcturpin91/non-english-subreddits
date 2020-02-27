@@ -47,6 +47,7 @@ while True:
 
 # sorted subreddit list
 subreddit_list = sorted(subreddit_set)
+subreddit_with_links_list = list(map(lambda subreddit: f'[{subreddit}](https://www.reddit.com/{subreddit})', subreddit_list))
 
 # write results back to text file
 with open('foreign_language_subreddits.txt', 'w', newline='') as f:
@@ -72,4 +73,4 @@ Users are encouraged to create a PR if they have foreign language subreddits not
 with open('README.md', 'w', newline='') as f:
     writer = csv.writer(f, delimiter='\n',escapechar=' ',quoting=csv.QUOTE_NONE)
     writer.writerow([readme_static_info])
-    writer.writerow(subreddit_list)
+    writer.writerow(subreddit_with_links_list)
